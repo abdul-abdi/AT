@@ -1,0 +1,267 @@
+/* Reset some default styles for cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles for body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #000000; /* Deep black background */
+  color: #ffffff; /* White text */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transitions for dark mode */
+}
+
+/* Header styles */
+header {
+  background-color: #222222; /* Dark gray background for header */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-out; /* Fade in animation */
+  color: #ffffff; /* White text */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #222222; /* Dark gray background for navigation */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  color: #ff0000; /* Red text on hover */
+}
+
+/* Hamburger Menu styles for small screens */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff; /* White lines for the hamburger icon */
+  margin: 6px 0;
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.hamburger-menu:hover div {
+  background-color: #ff0000; /* Red lines on hover */
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Confirmation message styles */
+.confirmation-message {
+  background-color: #00ff00; /* Bright green background for confirmation message */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+/* Category link styles */
+.category a {
+  color: #ffffff; /* White text for category links */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.category a:hover {
+  color: #ff0000; /* Red text on hover for category links */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Category styles for home page */
+.category {
+  padding: 20px;
+  background-color: #222222; /* Dark gray background for category boxes */
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+.category img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Document submission form styles */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form label {
+  color: #222222; /* Dark gray labels */
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="file"],
+form select,
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff; /* White border */
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ff6600; /* Orange button color */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition on hover */
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+  border: none; /* Remove button border */
+}
+
+form button:hover {
+  background-color: #cc5500; /* Darker orange on hover */
+}
+
+/* Submission feedback styles */
+.submission-feedback {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+.submission-feedback p {
+  margin-bottom: 10px;
+}
+
+/* User engagement - badges styles */
+.badges-container {
+  margin-top: 20px;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+.badge-image {
+  max-width: 50px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.share-badge {
+  background-color: #ff0000; /* Red background for share badge */
+}
+
+.share-badge a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+}
+
+.share-badge a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Airtime rewards countdown timer styles */
+.airtime-countdown {
+  background-color: #ff0000; /* Red background for countdown timer */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+/* Footer styles */
+footer {
+  background-color: #222222; /* Dark gray background for footer */
+  padding: 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  main {
+      grid-template-columns: 1fr;
+  }
+
+  form {
+      max-width: 100%;
+  }
+
+  /* Additional responsive adjustments if needed */
+}
+
+/* Dark mode toggle styles (optional) */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #000000; /* Deep black background for dark mode */
+  color: #ffffff; /* White text for dark mode */
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Slide-in from top animation */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* ... (Additional styles for other pages or elements) ... */

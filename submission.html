@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Document - Document Sharing Platform</title>
+    <!-- Include CSS and JavaScript files -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Submit Document</h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="submission.html">Submit Document</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Submit a Document</h2>
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <!-- Document Upload Section -->
+            <div class="upload-section">
+                <label for="document">Select a Document:</label>
+                <input type="file" id="document" name="document" accept=".pdf,.doc,.docx">
+                <p class="file-type-info">Supported file types: PDF, DOC, DOCX</p>
+            </div>
+
+            <!-- Category Selection Section -->
+            <div class="category-section">
+                <label for="category">Select a Category:</label>
+                <select id="category" name="category">
+                    <option value="hospitality">Hospitality</option>
+                    <option value="it">IT</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+
+            <!-- Additional Information Section (optional) -->
+            <div class="additional-info-section">
+                <label for="description">Document Description (optional):</label>
+                <textarea id="description" name="description" rows="4" placeholder="Provide a brief description"></textarea>
+            </div>
+
+            <!-- Submission Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2022 Document Sharing Platform. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
